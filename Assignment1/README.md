@@ -32,13 +32,13 @@
 ## External level implementation
 
 #### Views and/or stored procedures to deal with the chosen inheritance strategy
+We created views for showing all entries for Cats, Dogs an (All) Pets respectively, to hide the table-joints for the user:
+- [Views](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/views.sql)
 
-```diff
--  It should be possible to:
--  - See cats and dogs as separate views
--  - See all pets as in the single table strategy
--  - Update cats and dogs with a single SQL call, stored procedure or update on a view with a trigger.
-``` 
+We created stored procedures for inserting and updating cats, dogs and pets respectively. The reason for having a stored procedure for entering each animal, instead of one stored procedure handeling "any pet", is that we find the latter less scalable in case we end up with a database with lots of different animals that inherit from Pet:
+
+- [Stored procedures](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/stored_procedures.sql)
+
 
 ####  script that creates a designated user for accessing the database
 ```diff
