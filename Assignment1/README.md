@@ -5,7 +5,7 @@
 
 #### Discussion
 ```diff
-- pros and cons for choice of strategy..
+- under construction
 ``` 
 - Joint-table strategy
   + Pros:
@@ -14,7 +14,7 @@
   + Cons:
     - Structure gets complicated 
     - Runtime data updates are slow
-      + Especially as inheritance tree gets deeper, and e.g. updates has to go through several tables, each having to get locked before moving on to the next etc.
+      + Especially as inheritance tree gets deeper, and e.g. updates has to go through several tables, and obviously having to consider locks and transactions in doing so.
   
 - Table-per-class strategy
 - Single-table strategy
