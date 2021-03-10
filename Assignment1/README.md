@@ -8,6 +8,14 @@
 - pros and cons for choice of strategy..
 ``` 
 - Joint-table strategy
+  + Pros:
+    - Developmental Dynamic
+    - Follows OOP paradigm
+  + Cons:
+    - Structure gets complicated 
+    - Runtime data updates are slow
+      + Especially as inheritance tree gets deeper, and e.g. updates has to go through several tables, each having to get locked before moving on to the next etc.
+  
 - Table-per-class strategy
 - Single-table strategy
 
