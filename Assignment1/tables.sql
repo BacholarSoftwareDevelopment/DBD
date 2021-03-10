@@ -48,14 +48,14 @@ CREATE TABLE IF NOT EXISTS Dogs(
 	bark_pitch char(2)
 );
 
-CREATE TABLE IF NOT EXISTS Caretakers (
+CREATE TABLE IF NOT EXISTS Caretakers(
 	id SERIAL PRIMARY KEY,
 	name varchar(80) NOT NULL,
 	street varchar(100) NOT NULL,
 	zip_code int REFERENCES Cities NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS Pets_Caretakers (
+CREATE TABLE IF NOT EXISTS Pets_Caretakers(
 	caretaker_id SERIAL REFERENCES Caretakers (id) ON DELETE CASCADE,
 	pet_id SERIAL REFERENCES Pets (id) ON DELETE CASCADE,
 	CONSTRAINT pet_product_pkey PRIMARY KEY (caretaker_id, pet_id)
