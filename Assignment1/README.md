@@ -23,10 +23,10 @@
 
 ## Conceptual level implementation
 
-#### SQL-script that creates the tables
-- 
+#### Reentrant SQL-script that creates the tables:
+- [Tables](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/tables.sql)
 
-####  SQL-script with sample data for the tables
+####  Reentrant SQL-script with sample data for the tables:
 - [Sample data](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/sample_data.sql)
 
 ## External level implementation
