@@ -32,6 +32,7 @@
 ## External level implementation
 
 #### Views and/or stored procedures to deal with the chosen inheritance strategy
+
 We created views for showing all entries for Cats, Dogs an (All) Pets respectively, to hide the table-joints for the user:
 - [Views](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/views.sql)
 
@@ -40,21 +41,13 @@ We created stored procedures for inserting and updating cats, dogs and pets resp
 - [Stored procedures](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/stored_procedures.sql)
 
 
-####  script that creates a designated user for accessing the database
-```diff
--  and revokes the rights for that user to access the underlaying tables, implementing the inheritance strategy.
-``` 
+#### Script that creates a designated user for accessing the database:
 
+- [Designated user and acces](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/user_acces.sql)
 
 ## Interface implementation
 
 ####  A simple program in Java 
 ```diff
--  • retrieve a list of pets from the database. The types of instances of Pets in the list should reflect the actual type:
--  - Pet
--  - Cat
--  - Dog
--  - insert a new Dog, Cat, and/or Pet in the database.
-
-
+almost there . . .
 ``` 
