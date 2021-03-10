@@ -24,14 +24,10 @@
 ## Conceptual level implementation
 
 #### SQL-script that creates the tables
-```diff
-- reentrant sql script link goes here
-``` 
+- 
 
 ####  SQL-script with sample data for the tables
-```diff
-- at least two vetenarians, twenty pets of various kinds including some that are neither cats nor dogs, and ten caretakers some with common pets. Also this script should be reentrant
-``` 
+- [Sample data](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/sample_data.sql)
 
 ## External level implementation
 
