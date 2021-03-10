@@ -1,25 +1,22 @@
 package vetdb.entities;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "cats", schema = "public", catalog = "vetdb")
 public class CatsEntity {
-    private Long id;
+    private int id;
     private Integer lifeCount;
 
     @Id
     @GeneratedValue
     @Column(name = "id")
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
     public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,19 +34,8 @@ public class CatsEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         CatsEntity that = (CatsEntity) o;
-
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (lifeCount != null ? !lifeCount.equals(that.lifeCount) : that.lifeCount != null) return false;
-
-        return true;
+        return id == that.id && Objects.equals(lifeCount, that.lifeCount);
     }
 
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (lifeCount != null ? lifeCount.hashCode() : 0);
-        return result;
-    }
 }

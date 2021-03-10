@@ -5,21 +5,17 @@ import javax.persistence.*;
 @Entity
 @Table(name = "dogs", schema = "public", catalog = "vetdb")
 public class DogsEntity {
-    private Long id;
+    private int id;
     private String barkPitch;
 
     @Id
     @GeneratedValue
     @Column(name = "id")
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
     public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setId(Long id) {
         this.id = id;
     }
 
@@ -40,16 +36,9 @@ public class DogsEntity {
 
         DogsEntity that = (DogsEntity) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (id != 0 ? id != that.id : that.id != 0) return false;
         if (barkPitch != null ? !barkPitch.equals(that.barkPitch) : that.barkPitch != null) return false;
 
         return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (barkPitch != null ? barkPitch.hashCode() : 0);
-        return result;
     }
 }
