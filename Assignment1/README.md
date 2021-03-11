@@ -25,9 +25,10 @@
 ``` 
 
 #### ER diagram covering the domain
-```diff
-- ER diagram goes here
-``` 
+
+<img src="images/eer.png"
+     alt="EER Diagram VetDB"
+     style="float: center; margin: 10px;" />
 
 ## Conceptual level implementation
 
