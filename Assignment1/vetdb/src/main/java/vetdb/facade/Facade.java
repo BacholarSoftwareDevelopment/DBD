@@ -1,32 +1,70 @@
 package vetdb.facade;
 
-import vetdb.database.Resources;
 import vetdb.views.CatsView;
 import vetdb.views.DogsView;
 import vetdb.views.PetsView;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Query;
 import java.util.List;
 
 public class Facade {
 
-    public void getAllCats() {
-        List<CatsView> cats = Resources.getAllCats();
-        for (int i = 0; i < cats.size(); i++) {
-            System.out.println(cats.get(i));
-        }
+    private static Facade instance;
+    private static EntityManagerFactory emf;
+
+    private Facade() {
     }
 
-    public void getAllDogs() {
-        List<DogsView> dogs = Resources.getAllDogs();
-        for (int i = 0; i < dogs.size(); i++) {
-            System.out.println(dogs.get(i));
+    public static Facade getFacadeInstance(EntityManagerFactory _emf) {
+        if (instance == null) {
+            emf = _emf;
+            instance = new Facade();
         }
+        return instance;
     }
 
-    public void getAllPets() {
-        List<PetsView> pets = Resources.getAllPets();
-        for (int i = 0; i < pets.size(); i++) {
-            System.out.println(pets.get(i));
+    private EntityManager getEntityManager() {
+        return emf.createEntityManager();
+    }
+
+    public List<CatsView> getAllCats() {
+        EntityManager em = getEntityManager();
+        List<CatsView> list;
+        try {
+            em.getTransaction().begin();
+            Query q = em.createQuery("SELECT cv from CatsView cv");
+            list = q.getResultList();
+        } finally {
+            em.close();
         }
+        return list;
+    }
+
+    public List<DogsView> getAllDogs() {
+        EntityManager em = getEntityManager();
+        List<DogsView> list;
+        try {
+            em.getTransaction().begin();
+            Query q = em.createQuery("SELECT cv from DogsView cv");
+            list = q.getResultList();
+        } finally {
+            em.close();
+        }
+        return list;
+    }
+
+    public List<PetsView> getAllPets() {
+        EntityManager em = getEntityManager();
+        List<PetsView> list;
+        try {
+            em.getTransaction().begin();
+            Query q = em.createQuery("SELECT cv from PetsView cv");
+            list = q.getResultList();
+        } finally {
+            em.close();
+        }
+        return list;
     }
 }

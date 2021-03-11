@@ -84,7 +84,7 @@ public class CatsView implements Serializable {
         return "CatsView{" +
                 "id=" + id +
                 ", age=" + age +
-                ", lifes=" + life_count +
+                ", lives=" + life_count +
                 ", vetCvr=" + vet_cvr +
                 ", name='" + name + '\'' +
                 '}';
