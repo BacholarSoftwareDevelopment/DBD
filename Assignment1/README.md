@@ -28,7 +28,11 @@
 
 <img src="images/eer.png"
      alt="EER Diagram VetDB"
-     style="float: center; margin: 10px;" />
+     style="float: center; 
+     margin: 10px;
+     height: 50%;
+     width: 50%" 
+     />
 
 ## Conceptual level implementation
 
