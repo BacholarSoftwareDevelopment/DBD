@@ -38,4 +38,11 @@ public class CatsEntity {
         return id == that.id && Objects.equals(lifeCount, that.lifeCount);
     }
 
+    @Override
+    public String toString() {
+        return "CatsEntity{" +
+                "id=" + id +
+                ", lifeCount=" + lifeCount +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-package vetdb.entities;
+package vetdb.views;
 
 import javax.persistence.*;
 import java.io.Serializable;

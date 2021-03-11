@@ -10,6 +10,9 @@
         <class>vetdb.entities.DogsEntity</class>
         <class>vetdb.entities.PetsEntity</class>
         <class>vetdb.entities.VetsEntity</class>
+        <class>vetdb.views.CatsView</class>
+        <class>vetdb.views.DogsView</class>
+        <class>vetdb.views.PetsView</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5433/vetdb"/>
