@@ -10,8 +10,8 @@ public class Main {
     private static Resources rs = new Resources();
 
     public static void main(String[] args) {
-        // CatsView view = new CatsView(20, 15478536, 7, "Jesus");
-        // insertCat(view);
+//        CatsView view = new CatsView(20, 15478536, 7, "Jesus");
+//        insertCat(view);
         rs.getAllCats();
         rs.getAllDogs();
         rs.getAllPets();
@@ -38,19 +38,19 @@ public class Main {
     public static void insertCat(CatsView entity) {
         StoredProcedureQuery storedProcedure;
         EntityManager em = emf.createEntityManager();
-        //em = factory.createEntityManager();
+
         try {
             em.getTransaction().begin();
 
-            storedProcedure = em.createStoredProcedureQuery("insert_cat");
+            storedProcedure = em.createStoredProcedureQuery("{call insert_cat(?,?,?,?)}");
 //            storedProcedure.registerStoredProcedureParameter("new_name", String.class, ParameterMode.IN);
 //            storedProcedure.registerStoredProcedureParameter("new_age", Integer.class, ParameterMode.IN);
 //            storedProcedure.registerStoredProcedureParameter("new_cvr", Integer.class, ParameterMode.IN);
 //            storedProcedure.registerStoredProcedureParameter("new_life_count", Integer.class, ParameterMode.IN);
-            storedProcedure.registerStoredProcedureParameter(1, String.class, ParameterMode.IN);
-            storedProcedure.registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN);
-            storedProcedure.registerStoredProcedureParameter(3, Integer.class, ParameterMode.IN);
-            storedProcedure.registerStoredProcedureParameter(4, Integer.class, ParameterMode.IN);
+            storedProcedure.registerStoredProcedureParameter("name", String.class, ParameterMode.IN);
+            storedProcedure.registerStoredProcedureParameter("age", Integer.class, ParameterMode.IN);
+            storedProcedure.registerStoredProcedureParameter("vet_cvr", Integer.class, ParameterMode.IN);
+            storedProcedure.registerStoredProcedureParameter("life_count", Integer.class, ParameterMode.IN);
             storedProcedure.setParameter(1, entity.getName());
             storedProcedure.setParameter(2, entity.getAge());
             storedProcedure.setParameter(3, entity.getCvr());

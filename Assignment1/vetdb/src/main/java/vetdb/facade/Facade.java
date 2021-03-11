@@ -14,8 +14,7 @@ public class Facade {
     private static Facade instance;
     private static EntityManagerFactory emf;
 
-    private Facade() {
-    }
+    private Facade() {}
 
     public static Facade getFacadeInstance(EntityManagerFactory _emf) {
         if (instance == null) {
