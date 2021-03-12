@@ -21,7 +21,7 @@
 
 #### Strategy to implement the inheritance
 
-<img src="images/ER_joint_tables.png" width="200" />
+<img src="images/ER_joint_tables.png" width="600" />
 
 
 #### ER diagram covering the domain
