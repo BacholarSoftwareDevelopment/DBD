@@ -72,4 +72,5 @@ We created stored procedures for inserting and updating cats, dogs and pets resp
 
 ####  A simple program in Java 
 
-We made a simple java program, using JPA, to acces our database. It can be found in the folder [vetdb](https://github.com/BacholarSoftwareDevelopment/DBD/tree/main/Assignment1/vetdb)
+We made a simple java program, using JPA, to acces our database. 
+It can be found in the folder [vetdb](https://github.com/BacholarSoftwareDevelopment/DBD/tree/main/Assignment1/vetdb)
