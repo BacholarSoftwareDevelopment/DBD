@@ -21,11 +21,11 @@
 
 #### Strategy to implement the inheritance
 
-<img src="images/eer.png"ER_joint_tables.png/>
+<img src="images/ER_joint_tables.png/>
 
 #### ER diagram covering the domain
 
-<img src="images/eer.png"
+<img src="images/ER.png"
      alt="EER Diagram VetDB"
      style="float: center; 
      margin: 10px;
