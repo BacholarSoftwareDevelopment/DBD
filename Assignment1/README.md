@@ -3,7 +3,7 @@
 
 ## Design  
 
-#### Discussion
+#### Inheritance strategies
 
 - **Joint-table strategy**
   + Pros:
