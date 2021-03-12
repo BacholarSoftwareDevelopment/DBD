@@ -18,7 +18,7 @@
   
 - Table-per-class strategy
  
-   *If we need to access the specializations (The Cats and Dogs) a lot in their own tables, but only rarely need to access their related data in Pets; this is a good strategy, as it works very fast, as long as you only need access to a single table at a time.*
+   *If we need to access the specializations (The Cats and Dogs) a lot in their own tables, but only rarely need to access them along with their related data in Pets; this is a good strategy, as it works very fast, as long as you only need access to a single table at a time.*
   + Pros:
     - Insert, Delete and Update operations are super fast
     - 
