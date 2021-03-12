@@ -18,6 +18,13 @@
   
 - Table-per-class strategy
 - Single-table strategy
+  + Pros:
+    - Insert, Delete and Update operations are smooth
+    - 
+  + Cons:
+    -  Not developmental dynamic. 
+        + (Changes in data structures => changing table structure.)
+    - 
 
 #### Strategy to implement the inheritance
 
