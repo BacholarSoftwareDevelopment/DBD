@@ -20,13 +20,13 @@
 - Single-table strategy
 
 #### Strategy to implement the inheritance
-```diff
-- choice of strategy
-``` 
+
+<img src="images/ER_joint_tables.png" width="600" />
+
 
 #### ER diagram covering the domain
 
-<img src="images/eer.png"
+<img src="images/ER.png"
      alt="EER Diagram VetDB"
      style="float: center; 
      margin: 10px;
