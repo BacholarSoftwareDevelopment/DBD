@@ -24,8 +24,7 @@
 We went with the joint-tables strategy.
 
 #### ER diagram covering the domain
-
-<img src="images/ER_diagram.png"
+<img src="images/eer.png"
      alt="EER Diagram VetDB"
      style="float: center; 
      margin: 10px;
