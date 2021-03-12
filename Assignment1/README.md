@@ -24,11 +24,13 @@
 We went with the joint-tables strategy. Therefore we have created a table called Pets, containing all the common attributes, and a table for each type of pet (Cats and Dogs) containing pet type specific attributes. The Pet table ideally contains a type, e.g Enums, to identify the pet type of each pet. This is because that it saves resources when searching through tables, looking for for example "cats older than 5 years". With the type, we can first sort the pet table, before we join the pet/cat tables we want to view. 
 (BTW we didn't implement the types yet! Which is why we write "ideally")
 
+
    <img src="images/ER_joint_tables.png" width="600"/>
 
+  
 When accessing information about e.g. cats, the Pets table and Cats table are joined, to show all attributes:
-
-
+  
+  
    <img src="images/Cats_table.png" width="500"/>
 
 
