@@ -5,9 +5,17 @@
 
 #### Discussion
 ```diff
-- pros and cons for choice of strategy..
+- under construction
 ``` 
 - Joint-table strategy
+  + Pros:
+    - Developmental Dynamic
+    - Follows OOP paradigm
+  + Cons:
+    - Structure gets complicated 
+    - Runtime data updates are slow
+      + Especially as inheritance tree gets deeper, and e.g. updates has to go through several tables, and obviously having to consider locks and transactions in doing so.
+  
 - Table-per-class strategy
 - Single-table strategy
 
@@ -17,48 +25,42 @@
 ``` 
 
 #### ER diagram covering the domain
-```diff
-- ER diagram goes here
-``` 
+
+<img src="images/eer.png"
+     alt="EER Diagram VetDB"
+     style="float: center; 
+     margin: 10px;
+     height: 50%;
+     width: 50%" 
+     />
 
 ## Conceptual level implementation
 
-#### SQL-script that creates the tables
-```diff
-- reentrant sql script link goes here
-``` 
+#### Reentrant SQL-script that creates the tables:
+- [Tables](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/tables.sql)
 
-####  SQL-script with sample data for the tables
-```diff
-- at least two vetenarians, twenty pets of various kinds including some that are neither cats nor dogs, and ten caretakers some with common pets. Also this script should be reentrant
-``` 
+####  Reentrant SQL-script with sample data for the tables:
+- [Sample data](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/sample_data.sql)
 
 ## External level implementation
 
 #### Views and/or stored procedures to deal with the chosen inheritance strategy
 
-```diff
--  It should be possible to:
--  - See cats and dogs as separate views
--  - See all pets as in the single table strategy
--  - Update cats and dogs with a single SQL call, stored procedure or update on a view with a trigger.
-``` 
+We created views for showing all entries for Cats, Dogs an (All) Pets respectively, to hide the table-joints for the user:
+- [Views](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/views.sql)
 
-####  script that creates a designated user for accessing the database
-```diff
--  and revokes the rights for that user to access the underlaying tables, implementing the inheritance strategy.
-``` 
+We created stored procedures for inserting and updating cats, dogs and pets respectively. The reason for having a stored procedure for entering each animal, instead of one stored procedure handeling "any pet", is that we find the latter less scalable in case we end up with a database with lots of different animals that inherit from Pet:
 
+- [Stored procedures](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/stored_procedures.sql)
+
+
+#### Script that creates a designated user for accessing the database:
+
+- [Designated user and acces](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/user_acces.sql)
 
 ## Interface implementation
 
 ####  A simple program in Java 
 ```diff
--  • retrieve a list of pets from the database. The types of instances of Pets in the list should reflect the actual type:
--  - Pet
--  - Cat
--  - Dog
--  - insert a new Dog, Cat, and/or Pet in the database.
-
-
+almost there . . .
 ``` 

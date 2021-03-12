@@ -8,6 +8,7 @@ public class PetsEntity {
     private int id;
     private String name;
     private int age;
+    private int vetCvr;
 
     @Id
     @GeneratedValue
@@ -40,6 +41,17 @@ public class PetsEntity {
         this.age = age;
     }
 
+    @Basic
+    @Column(name = "vet_cvr")
+    public int getVetCvr() {
+        return vetCvr;
+    }
+
+    public void setVetCvr(int vetCvr) {
+        this.vetCvr = vetCvr;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,5 +64,15 @@ public class PetsEntity {
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
 
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "PetsEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", vetCvr=" + vetCvr +
+                '}';
     }
 }

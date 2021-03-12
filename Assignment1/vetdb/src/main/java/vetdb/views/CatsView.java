@@ -1,4 +1,4 @@
-package vetdb.entities;
+package vetdb.views;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -84,7 +84,7 @@ public class CatsView implements Serializable {
         return "CatsView{" +
                 "id=" + id +
                 ", age=" + age +
-                ", lifes=" + life_count +
+                ", lives=" + life_count +
                 ", vetCvr=" + vet_cvr +
                 ", name='" + name + '\'' +
                 '}';

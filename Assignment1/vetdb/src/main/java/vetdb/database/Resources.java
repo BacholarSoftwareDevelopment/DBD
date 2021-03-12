@@ -1,29 +1,35 @@
 package vetdb.database;
 
-import vetdb.entities.CatsEntity;
+import vetdb.facade.Facade;
+import vetdb.views.CatsView;
+import vetdb.views.DogsView;
+import vetdb.views.PetsView;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 public class Resources {
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
+    private Facade facade = Facade.getFacadeInstance(emf);
 
-    private static EntityManager manager;
-    private static Factory factory = new Factory(manager);
-
-    public static List<CatsEntity> getAllCats() {
-        List<CatsEntity> list;
-        try {
-          manager.getTransaction().begin();
-          Query q = manager.createQuery("SELECT c from CatsEntity c");
-          list = q.getResultList();
-        } finally {
-            manager.close();
+    public void getAllCats() {
+        List<CatsView> cats = facade.getAllCats();
+        for (int i = 0; i < cats.size(); i++) {
+            System.out.println(cats.get(i));
         }
-        return list;
     }
 
-    public static void main(String[] args) {
-        getAllCats();
+    public void getAllDogs() {
+        List<DogsView> dogs = facade.getAllDogs();
+        for (int i = 0; i < dogs.size(); i++) {
+            System.out.println(dogs.get(i));
+        }
+    }
+
+    public void getAllPets() {
+        List<PetsView> pets = facade.getAllPets();
+        for (int i = 0; i < pets.size(); i++) {
+            System.out.println(pets.get(i));
+        }
     }
 }
