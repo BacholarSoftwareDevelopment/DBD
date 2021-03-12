@@ -1,5 +1,4 @@
-# Assignment #1 - Relational Databases
-[Link to assignment](01-relational-db.pdf)  
+
 
 ## Design  
 
