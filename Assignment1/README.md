@@ -21,7 +21,8 @@
 
 #### Strategy to implement the inheritance
 
-<img src="images/ER_joint_tables.png/>
+![ER Diagram - inheritance](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/images/ER_joint_tables.png)
+
 
 #### ER diagram covering the domain
 
