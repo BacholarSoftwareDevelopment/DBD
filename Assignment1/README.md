@@ -4,9 +4,7 @@
 ## Design  
 
 #### Discussion
-```diff
-- under construction
-``` 
+
 - **Joint-table strategy**
   + Pros:
     - Developmental Dynamic
@@ -44,7 +42,7 @@
       + (Adding an attribute => migrating the entire table)
 
 
-**Note: In generel though, we would like to avoid inheritance as such in database design, as it seldom presents an optimal way to structure data in a database.**
+*Note: In generel though, we would like to avoid inheritance as such in database design, as it seldom presents an optimal way to structure data in a database.*
 
 #### Strategy to implement the inheritance
 
