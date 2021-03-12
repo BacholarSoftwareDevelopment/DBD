@@ -10,6 +10,7 @@
 - Joint-table strategy
   + Pros:
     - Developmental Dynamic
+      + (If you want to add a new attribute, you just create a new coulumn in the respective table.)
     - Follows OOP paradigm
   + Cons:
     - Structure gets complicated 
@@ -18,14 +19,16 @@
   
 - Table-per-class strategy
  
-   *If we need to access the specializations (The Cats and Dogs) a lot in their own tables, but only rarely need to access them along with their related data in Pets; this is a good strategy, as it works very fast, as long as you only need access to a single table at a time.*
+   *If you need to access the specializations (the Cats and Dogs) a lot in their own tables, but only rarely need to access them along with their related data in Pets; this is a good strategy.
+   As long as you mainly need to acces a single table, this approach works very fast.*
+   
   + Pros:
     - Insert, Delete and Update operations are super fast
-    - 
+
   + Cons:
     -  Not developmental dynamic 
         + (If we want to add a common attribute, we cant just add it to table Pets (as in the joint-tables strategy), but have to add it to each of the tables.)
-   
+    - Unions are very slow
    
    - Deeper inheritance gets overwhelming 
 - Single-table strategy
