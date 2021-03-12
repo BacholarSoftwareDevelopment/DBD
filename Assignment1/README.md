@@ -24,7 +24,7 @@
     - 
   + Cons:
     -  Not developmental dynamic 
-        + (Changes in data structures => changing table structure.)
+        + (If we want to add a common attribute, we cant just add it to table Pets (as in the joint-tables strategy), but have to add it to each of the tables.)
    
    
    - Deeper inheritance gets overwhelming 
