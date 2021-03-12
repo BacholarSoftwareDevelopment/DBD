@@ -7,7 +7,7 @@
 ```diff
 - under construction
 ``` 
-- Joint-table strategy
+- **Joint-table strategy**
   + Pros:
     - Developmental Dynamic
       + (If you want to add a new attribute, you just create a new coulumn in the respective table.)
@@ -17,22 +17,34 @@
     - Runtime data updates are slow
       + Especially as inheritance tree gets deeper, and e.g. updates has to go through several tables, and obviously having to consider locks and transactions in doing so.
   
-- Table-per-class strategy
+- **Table-per-class strategy**
  
    *If you need to access the specializations (the Cats and Dogs) a lot in their own tables, but only rarely need to access them along with their related data in Pets; this is a good strategy.
    As long as you mainly need to acces a single table, this approach works very fast.*
    
   + Pros:
     - Insert, Delete and Update operations are super fast
-
   + Cons:
     -  Not developmental dynamic 
         + (If we want to add a common attribute, we cant just add it to table Pets (as in the joint-tables strategy), but have to add it to each of the tables.)
     - Unions are very slow
    
-   - Deeper inheritance gets overwhelming 
-- Single-table strategy
-  
+ 
+   
+- **Single-table strategy**
+ 
+   *This solution is very fast. If you mainly aim to access lists (tables) of pets with at their specializations respectively, this is the way to go.
+   Have in min with this solution, that it requires a very structured code sorrounding the table, to make sure that according attributes are placed - and placed correct. (Views and stored procedures to work with the table is highly recommended.)*
+   
+  + Pros:
+    - F...ing fast
+  + Cons:
+    - Normal forms 
+    - Not developmental dynamic
+      + (Adding an attribute => migrating the entire table)
+
+
+**Note: In generel though, we would like to avoid inheritance as such in database design, as it seldom presents an optimal way to structure data in a database.**
 
 #### Strategy to implement the inheritance
 
