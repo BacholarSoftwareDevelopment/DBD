@@ -20,9 +20,8 @@
 - Single-table strategy
 
 #### Strategy to implement the inheritance
-```diff
-- choice of strategy
-``` 
+
+We went with the joint-tables strategy.
 
 #### ER diagram covering the domain
 
