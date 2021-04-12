@@ -1,4 +1,7 @@
 # Assignment 2 | Column-based databases
+## Assignment
+https://datsoftlyngby.github.io/soft2021spring/resources/1fd325b2-assignment_column_db.pdf
+
 ## Task 1 - investigation
 ### 1. What is the point of NoSQL databases?
 
