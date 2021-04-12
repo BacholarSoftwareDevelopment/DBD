@@ -47,11 +47,11 @@ You can say that
 
 
 Examples of real use cases:
-     - Telecom industry
-          - Storing billions of log records with real time access
-     - Facebook
-          - Real time messaging 
-          - Huge datasets with billions of messages beeing pushed each month and a need for fast retrieval of these
-     - Netflix
-          - Terabytes of userdata
-          - Storing and pushing terrabytes of ie music or video
+- Telecom industry
+     - Storing billions of log records with real time access
+- Facebook
+     - Real time messaging 
+     - Huge datasets with billions of messages beeing pushed each month and a need for fast retrieval of these 
+- Netflix
+     - Terabytes of userdata
+     - Storing and pushing terrabytes of ie music or video
