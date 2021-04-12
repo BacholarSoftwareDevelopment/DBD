@@ -2,6 +2,8 @@
 
 ## Design  
 
+### Assignment
+https://datsoftlyngby.github.io/soft2021spring/resources/c2e4d269-01-relational-db.pdf
 ### Inheritance strategies
 
 - **Joint-table strategy**
