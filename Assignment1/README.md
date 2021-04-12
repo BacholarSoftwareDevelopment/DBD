@@ -2,7 +2,7 @@
 
 ## Design  
 
-#### Inheritance strategies
+### Inheritance strategies
 
 - **Joint-table strategy**
   + Pros:
@@ -43,7 +43,7 @@
 
 *Note: In generel though, we would like to avoid inheritance as such in database design, as it seldom presents an optimal way to structure data in a database.*
 
-#### Strategy to implement the inheritance
+### Strategy to implement the inheritance
 
 We went with the joint-tables strategy. Therefore we have created a table called Pets, containing all the common attributes, and a table for each type of pet (Cats and Dogs) containing pet type specific attributes. The Pet table ideally contains a type, e.g Enums, to identify the pet type of each pet. This is because that it saves resources when searching through tables, looking for for example "cats older than 5 years". With the type, we can first sort the pet table, before we join the pet/cat tables we want to view. 
 (BTW we didn't implement the types yet! Which is why we write "ideally")
@@ -58,7 +58,7 @@ When accessing information about e.g. cats, the Pets table and Cats table are jo
    <img src="images/Cats_table.png" width="500"/>
 
 
-#### ER diagram covering the domain
+### ER diagram covering the domain
 
 <img src="images/ER.png"
      alt="EER Diagram VetDB"
@@ -70,15 +70,15 @@ When accessing information about e.g. cats, the Pets table and Cats table are jo
 
 ## Conceptual level implementation
 
-#### Reentrant SQL-script that creates the tables:
+### Reentrant SQL-script that creates the tables:
 - [Tables](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/tables.sql)
 
-####  Reentrant SQL-script with sample data for the tables:
+###  Reentrant SQL-script with sample data for the tables:
 - [Sample data](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/sample_data.sql)
 
 ## External level implementation
 
-#### Views and/or stored procedures to deal with the chosen inheritance strategy
+### Views and/or stored procedures to deal with the chosen inheritance strategy
 
 We created views for showing all entries for Cats, Dogs an (All) Pets respectively, to hide the table-joints for the user:
 - [Views](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/views.sql)
@@ -88,13 +88,13 @@ We created stored procedures for inserting and updating cats, dogs and pets resp
 - [Stored procedures](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/stored_procedures.sql)
 
 
-#### Script that creates a designated user for accessing the database:
+### Script that creates a designated user for accessing the database:
 
 - [Designated user and acces](https://github.com/BacholarSoftwareDevelopment/DBD/blob/main/Assignment1/Scripts/user_acces.sql)
 
 ## Interface implementation
 
-####  A simple program in Java 
+###  A simple program in Java 
 
 We made a simple java program, using JPA, to acces our database. 
 
