@@ -24,8 +24,10 @@ Advantages over relationel databases:
 - Availability 
 - Partition
 
-The CAP theorem deals with the trade-off between consistency and availability. (A trade-off you in reality don't really want to make)
+The CAP theorem deals with the trade-off between consistency and availability. 
 => Do you want to allow copies of your data to get out of sync with each other or not.
+
+<img src="https://www.researchgate.net/profile/Hamzeh_Khazaei/publication/282679529/figure/fig2/AS:614316814372880@1523475950595/Visualization-of-CAP-theorem.png" width="400">
 
 **CAP vs ACID**
 
