@@ -10,7 +10,7 @@ Advantages over relationel databases:
 - Flexible
   - Shemaless: 
      - You don't have to design a schema beforehand; therefore you don't have to be 100% sure what you want to store beforehand. 
-     - And sin ce you don't have to adhere to a special schema, you can at any moment change or fill in data.
+     - And since you don't have to adhere to a special schema, you can at any moment change or fill in data.
 - Distributed
 - Fault tolerant
   - 100% uptime through replication
@@ -19,19 +19,37 @@ Advantages over relationel databases:
 
 ### 2. What is the CAP theorem?
 
-**Consistency:** Every read receives the most recent write or an error.
-     - *"it either works.. or it doesn't"
 
-**Availability:** Every request receives a (non-error) response
-     - 
+- Consistency 
+- Availability 
+- Partition
 
-**Partition:** tolerant
+The CAP theorem deals with the trade-off between consistency and availability. (A trade-off you in reality don't really want to make)
+=> Do you want to allow copies of your data to get out of sync with each other or not.
 
+**CAP vs ACID**
 
-          - 
 CAP Applies to distributed systems 
+You can say that
+     - CAP addresses cluster-wide data consistency, where as
+     - ACID addresses an individual node's data consistency
 
-ACID addresses an individual node's data consistency
-CAP addresses cluster-wide data consistency
 
 #### 3. What are ideal use cases of HBase?
+
+- Huge data volumes
+- Key dependent access to data
+- Real time access to data
+- Quick access to data
+
+
+
+Examples of real use cases:
+     - Telecom industry
+          - Storing billions of log records with real time access
+     - Facebook
+          - Real time messaging 
+          - Huge datasets with billions of messages beeing pushed each month and a need for fast retrieval of these
+     - Netflix
+          - Terabytes of userdata
+          - Storing and pushing terrabytes of ie music or video
