@@ -108,7 +108,8 @@ Solve the following using Javascript, for example in your browser’s developer 
           {name : ’ Mathias ’ , age : 46}
           ] ;
 should be turned into
-          g roupedPeople = groupBy ( pe ople , ’ age ’ ) ;
+         
+         g roupedPeople = groupBy ( pe ople , ’ age ’ ) ;
           /*
           g roupPe ople :
           {
