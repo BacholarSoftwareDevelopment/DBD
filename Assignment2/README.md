@@ -68,6 +68,8 @@ Examples of real use cases:
 Bloom filters are used in hbase as an incredible optimization. Solve the following.
 
 ### 1. What is a bloom filter?
+It's a very cool data structure!
+
 ### 2. What is an advantage of bloom filters over hash tables?
 ### 3. What is a disadvantage of bloom filters?
 ### 4. Using your language of choice, implement a bloom filter with add and check functions. The backing bit-array can simply be a long (64 bit integer).
