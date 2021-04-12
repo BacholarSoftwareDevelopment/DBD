@@ -102,25 +102,25 @@ Solve the following using Javascript, for example in your browser’s developer 
 ### 8. Use reduce to flatten an array of arrays: [[1,2],[3,4],[5,6]]
 ### 9. Use reduce to return an array of the positive numbers: [-3, -1, 2, 4, 5]
 ### 10. Optional: The accumulator function can obviously use objects outside of itself. Use reduce to implement groupBy. For example:
-p e o pl e = [
-{name : ’ Rikke ’ , age : 4 6} ,
-{name : ’ Michael ’ , age : 4 7} ,
-{name : ’ Mathias ’ , age : 46}
-] ;
+          p e o pl e = [
+          {name : ’ Rikke ’ , age : 4 6} ,
+          {name : ’ Michael ’ , age : 4 7} ,
+          {name : ’ Mathias ’ , age : 46}
+          ] ;
 should be turned into
-g roupedPeople = groupBy ( pe ople , ’ age ’ ) ;
-/*
-g roupPe ople :
-{
-4 6: [
-{name : ’ Rikke ’ , age : 4 6 } ,
-{name : ’ Mathias ’ , age : 4 6 }
-] ,
-4 7: [
-{name : ’ Michael ’ , age : 4 7 }
-]
-}
-*/
+          g roupedPeople = groupBy ( pe ople , ’ age ’ ) ;
+          /*
+          g roupPe ople :
+          {
+          4 6: [
+          {name : ’ Rikke ’ , age : 4 6 } ,
+          {name : ’ Mathias ’ , age : 4 6 }
+          ] ,
+          4 7: [
+          {name : ’ Michael ’ , age : 4 7 }
+          ]
+          }
+          */
   
   
   
