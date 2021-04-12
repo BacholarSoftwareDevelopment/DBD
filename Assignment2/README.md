@@ -37,7 +37,7 @@ You can say that
      - ACID addresses an individual node's data consistency
 
 
-#### 3. What are ideal use cases of HBase?
+### 3. What are ideal use cases of HBase?
 
 - Huge data volumes
 - Key dependent access to data
