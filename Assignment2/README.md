@@ -1,6 +1,6 @@
 # Assignment 2 | Column-based databases
 ## Task 1 - investigation
-### 1. What is point of NoSQL databases?
+### 1. What is the point of NoSQL databases?
 
 NoSQL databases are especially good at handeling Big Data. 
 Advantages over relationel databases:
