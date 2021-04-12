@@ -6,8 +6,10 @@ NoSQL databases are especially good at handeling Big Data.
 Advantages over relationel databases:
 
 - Horizontal scalable 
-- 
-     -  <img src="https://media-exp1.licdn.com/dms/image/C4E12AQGTvaEI8H8q4g/article-cover_image-shrink_720_1280/0/1570364364976?e=1623888000&v=beta&t=gX7kmwymPkopN411vzCNeE1pZqmdk5ZpCzyBsO4N7DE" width="400">
+
+<img src="https://media-exp1.licdn.com/dms/image/C4E12AQGTvaEI8H8q4g/article-cover_image-shrink_720_1280/0/1570364364976?e=1623888000&v=beta&t=gX7kmwymPkopN411vzCNeE1pZqmdk5ZpCzyBsO4N7DE" width="400">
+
+
 - Flexible
   - Shemaless: 
      - You don't have to design a schema beforehand; therefore you don't have to be 100% sure what you want to store beforehand. 
