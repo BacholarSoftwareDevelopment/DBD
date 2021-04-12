@@ -92,15 +92,24 @@ Coding.
 
 Solve the following using Javascript, for example in your browser’s developer console.
 
-### 1. Map the list of numbers to a list of their square roots: [1, 9, 16, 100]
-### 2. Map the list of words so each is wrapped in a <h1> tag: [“Intro”, “Requirements”, “Analysis”, “Implementation”, “Conclusion”, “Discussion”, “References”]
-### 3. Use map to uppercase the words (all letters): [“i’m”, “yelling”, “today”]
-### 4. Use map to transform words into their lengths: [“I”, “have”, “looooooong”, “words”]
+### 1. Map the list of numbers to a list of their square roots:
+      [1, 9, 16, 100]
+### 2. Map the list of words so each is wrapped in a <h1> tag:
+            
+            [“Intro”, “Requirements”, “Analysis”, “Implementation”, “Conclusion”, “Discussion”, “References”]
+### 3. Use map to uppercase the words (all letters):
+    [“i’m”, “yelling”, “today”]
+### 4. Use map to transform words into their lengths: 
+      [“I”, “have”, “looooooong”, “words”]
 ### 5. Get the json file comics.json from the course site. Paste it into your browser’s Javascript console. Use map to get all the image urls, and wrap them in img-tags.
-### 6. Use reduce to sum the array of numbers: [1,2,3,4,5]
-### 7. Use reduce to sum the x-value of the objects in the array: [{x: 1},{x:2},{x: 3}]
-### 8. Use reduce to flatten an array of arrays: [[1,2],[3,4],[5,6]]
-### 9. Use reduce to return an array of the positive numbers: [-3, -1, 2, 4, 5]
+### 6. Use reduce to sum the array of numbers:
+    [1,2,3,4,5]
+### 7. Use reduce to sum the x-value of the objects in the array: 
+    [{x: 1},{x:2},{x: 3}]
+### 8. Use reduce to flatten an array of arrays:
+    [[1,2],[3,4],[5,6]]
+### 9. Use reduce to return an array of the positive numbers: 
+    [-3, -1, 2, 4, 5]
 ### 10. Optional: The accumulator function can obviously use objects outside of itself. Use reduce to implement groupBy. For example:
           p e o pl e = [
           {name : ’ Rikke ’ , age : 4 6} ,
