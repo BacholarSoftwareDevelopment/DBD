@@ -34,12 +34,12 @@ The CAP theorem deals with the trade-off between consistency and availability.
 <img src="https://www.researchgate.net/profile/Hamzeh_Khazaei/publication/282679529/figure/fig2/AS:614316814372880@1523475950595/Visualization-of-CAP-theorem.png" width="400">
 </p>
 
-**CAP vs ACID**
+***CAP vs ACID***
 
-CAP Applies to distributed systems 
+*CAP Applies to distributed systems 
 You can say that
      - CAP addresses cluster-wide data consistency, where as
-     - ACID addresses an individual node's data consistency
+     - ACID addresses an individual node's data consistency*
 
 
 ### 3. What are ideal use cases of HBase?
