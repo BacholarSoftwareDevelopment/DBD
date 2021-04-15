@@ -25,6 +25,7 @@ Advantages over relationel databases:
 
 ### 2. What is the CAP theorem?
 
+*/(se video 15. april 1,5-2 timer inde)
 
 - Consistency 
 - Availability 
