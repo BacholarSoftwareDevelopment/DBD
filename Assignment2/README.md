@@ -57,7 +57,7 @@ You can say that
 Examples of real use cases:
 - Telecom industry
      - Storing billions of log records with real time access
-- Facebook
+- Facebook messenger
      - Real time messaging 
      - Huge datasets with billions of messages beeing pushed each month and a need for fast retrieval of these 
 - Netflix
