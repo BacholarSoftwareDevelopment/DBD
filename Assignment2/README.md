@@ -49,6 +49,8 @@ You can say that
 ### 3. What are ideal use cases of HBase?
 
 - Huge data volumes
+- High scalability
+- Column oriented data models
 - Key dependent access to data
 - Real time access to data
 - Quick access to data
