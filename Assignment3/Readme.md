@@ -1,3 +1,5 @@
-Solution made in group with Sebatian:
+Group members:
 
-https://github.com/sebbelebbe/EDMA
+Sebastian Harvej, Malene Hansen
+
+Link to solution: https://github.com/sebbelebbe/EDMA
