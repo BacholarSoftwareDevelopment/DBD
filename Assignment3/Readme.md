@@ -1,5 +1,3 @@
-Group members:
+**Group members:** Sebastian Harvej, Malene Hansen
 
-Sebastian Harvej, Malene Hansen
-
-Link to solution: https://github.com/sebbelebbe/EDMA
+**Link to solution:** https://github.com/sebbelebbe/EDMA
