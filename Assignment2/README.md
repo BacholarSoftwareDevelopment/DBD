@@ -77,14 +77,37 @@ It's a very cool data structure!
 ### 3. What is a disadvantage of bloom filters?
 ### 4. Using your language of choice, implement a bloom filter with add and check functions. The backing bit-array can simply be a long (64 bit integer).
 ### 5. If you are to store one million ASCII strings with an average size of 10 characters in a hash set, what would be the approximate space consumption?
+Hver karakter fylder 1 byte derfor 10 * 1.000.000 = 10.000.000 bytes
+
+1 byte = 8 bits 10.000.000 bytes * 8 = 80.000.000 bits
+
 ### 6. The following equation gives the required number of bits of space per inserted key, where E is the false positive rate. b = 1.44log2(1/E) (1)
+
+The following equation gives the required number of bits of space per inserted key, where E is the false positive rate.
+
+b = 1.44log2(1/E)
+
 ### 7. How many bits per element are required for a 1% false positive rate?
+
+1,44*log2(1/0,01) = 9,56 bits svarende til ca. 10 bits
+
+
 ### 8. How many bits per element are required for a 5% false positive rate?
+
+
+1,44*log2(1/0,05) = 6,22 bits svarende til ca. 6 bits
+
+
 ### 9. If you are to store one million ASCII strings with an average size of 10 characters in a bloom filter, what would be the approximate space consumption, given an allowed false positive rate of 5%?.
+
+6,22 * 1.000.000 = 62.200.000 bits
+
 
 ## Task 3 - Huffman coding
 HBase internally uses a compression that is a combination of LZ77 and Huffman
 Coding.
+
+https://www.programiz.com/dsa/huffman-coding
 
 ### 1. Generate Huffmann Code (and draw the Huffmann Tree) based on the following string: “beebs beepps!!!!! their eerie ears hear pears”
 ### 2. How many bits is the compressed string? How many bits is the raw ASCII string?
